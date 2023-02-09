@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MDHL</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="head">
+            <img src="/assets/images/Logo Mighty ducks-01.png" alt="MDHL" width="125" height="125">
+            <div >
+                <h1 class="title">Mighty Ducks Hockey League </h1>
+                <nav class="menu">
+                    <li class="margin-side"><a href="#home" onclick="showHome()">Home</a></li>
+                    <li class="margin-side"><a href="#about-MDHL" onclick="showAboutMDHL()">About MDHL</a></li>
+                    <li class="margin-side"><a href="#contact" onClick="showContact()">Contact</a></li>
+                </nav>   
+            </div>
+        </div>
+        <section class="head" id="home" style="display:none">
+            <img src="/assets/images/hockey  1.jpg" alt="image 1" width="125" height="125" class="image">
+            
+            <ul style="list-style:none">
+                <li>
+                    <h2>Upcoming Events</h2>
+                <li class="margin-l">
+                    <h3>August 4</h3>
+                    <p class="margin-l">MDSL Fundraiser</p>
+                </li>
+                <li class="margin-l">
+                    <h3>August 16</h3>
+                    <p class="margin-l">Season Kick-off: Meet the Teams</p>
+                </li>
+                <li class="margin-l">
+                    <h3>September 1</h3>
+                    <p class="margin-l">First Game of the Season (Check Game Schedule for details)</p>
+                </li>
+            </ul>
+        </section>
+        <section id="about-MDHL" class="head" style="display:none">
+            <img src="/assets/images/hockey  2.jpg" alt="MDHL" width="125" height="125" class="image">
+            <div class="margin-left">
+                <div>
+                    <h2>Mision</h2>
+                    <p>
+                        To support young athletes living Chicago's northside neighborhood, who have an interest in
+                        learning and playing soccer, with opportunities to learn and practice skills related to the game of
+                        hockey, specifically those skills around team cooperation and good sportsmanship
+                    </p>
+                </div>
+                <div>
+                    <h2>Vision</h2>
+                    <p>
+                        The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes
+                        through the building of character, self-discipline, and leadership.
+
+                    </p>
+                </div>
+                <div>
+                    <h2>General Information</h2>
+                    <p>
+                        The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
+                        Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
+                        member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
+                        neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of
+                        parents and previous league members
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="head" style="display:none">
+            <img src="/assets/images/hockey 3.jpg" alt="MDHL" width="125" height="125" class="image">
+            <p class="margin-left">
+                Please email us at mdhl@chihockey.org
+                <br>
+                We reply to your email as soon as we can.
+            </p>
+        </section>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+    showHome = () => {
+        document.getElementById("home").style.display = "flex";
+        document.getElementById("about-MDHL").style.display = "none";
+        document.getElementById("contact").style.display = "none";
+    }
+
+    showAboutMDHL = () => {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("about-MDHL").style.display = "flex";
+        document.getElementById("contact").style.display = "none";
+    }
+
+    showContact = () => {
+        document.getElementById("home").style.display = "none";
+        document.getElementById("about-MDHL").style.display = "none";
+        document.getElementById("contact").style.display = "flex";
+    }
+
+</script>
