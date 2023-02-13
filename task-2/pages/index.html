@@ -13,13 +13,13 @@
             <img src="../assets/images/design1_image1.jpg" alt="banner">
             <h1>Mighty Ducks Hockey League </h1>
             <nav class="">
-                <a href="#home" onclick="showHome()" class="margin-side button-nav background-green">Home</a>
-                <a href="#about-MDHL" onclick="showAboutMDHL()" class="margin-side button-nav background-purple">About</a>
-                <a href="#contact" onClick="showContact()" class="margin-side button-nav background-purple">Contact</a>
+                <a href="#home" onclick="showHome()" class="margin-side button-nav background-green" id="homeLink">Home</a>
+                <a href="#about-MDHL" onclick="showAboutMDHL()" class="margin-side button-nav background-purple" id="aboutLink">About</a>
+                <a href="#contact" onClick="showContact()" class="margin-side button-nav background-purple" id="contactLink">Contact</a>
             </nav>      
 
         </header>
-        <section class="" id="home" style="display:none">
+        <section class="" id="home" >
             <img src="../assets/images/hockey  1.jpg" alt="image 1" class="image">
             <div class="content-section">
                 <ul style="list-style:none">
@@ -87,22 +87,31 @@
 
 <script type="text/javascript">
 
-    showHome = () => {
+    showHome = () =>{
         document.getElementById("home").style.display = "inherit";
         document.getElementById("about-MDHL").style.display = "none";
         document.getElementById("contact").style.display = "none";
+        document.getElementById("homeLink").style.backgroundColor = "orange";
+        document.getElementById("aboutLink").style.backgroundColor = "purple";
+        document.getElementById("contactLink").style.backgroundColor = "purple";
     }
 
     showAboutMDHL = () => {
         document.getElementById("home").style.display = "none";
         document.getElementById("about-MDHL").style.display = "inherit";
         document.getElementById("contact").style.display = "none";
+        document.getElementById("aboutLink").style.backgroundColor = "orange";
+        document.getElementById("homeLink").style.backgroundColor = "green";
+        document.getElementById("contactLink").style.backgroundColor = "purple";
     }
 
     showContact = () => {
         document.getElementById("home").style.display = "none";
         document.getElementById("about-MDHL").style.display = "none";
         document.getElementById("contact").style.display = "inherit";
+        document.getElementById("contactLink").style.backgroundColor = "orange";
+        document.getElementById("homeLink").style.backgroundColor = "green";
+        document.getElementById("aboutLink").style.backgroundColor = "purple";
     }
 
 </script>
