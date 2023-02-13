@@ -8,7 +8,7 @@
         <link rel="stylesheet" href=../assets/css/style.css>
     </head>
     <body>
-        <div class="head">
+        <header>
             <!-- <img src="../assets/images/Logo Mighty ducks-01.png" alt="MDHL" width="125" height="125"> -->
             <img src="../assets/images/design1_image1.jpg" alt="banner">
             <h1>Mighty Ducks Hockey League </h1>
@@ -18,7 +18,7 @@
                 <a href="#contact" onClick="showContact()" class="margin-side button-nav background-purple">Contact</a>
             </nav>      
 
-        </div>
+        </header>
         <section class="" id="home" style="display:none">
             <img src="../assets/images/hockey  1.jpg" alt="image 1" class="image">
             <div class="content-section">
@@ -88,21 +88,21 @@
 <script type="text/javascript">
 
     showHome = () => {
-        document.getElementById("home").style.display = "flex";
+        document.getElementById("home").style.display = "inherit";
         document.getElementById("about-MDHL").style.display = "none";
         document.getElementById("contact").style.display = "none";
     }
 
     showAboutMDHL = () => {
         document.getElementById("home").style.display = "none";
-        document.getElementById("about-MDHL").style.display = "flex";
+        document.getElementById("about-MDHL").style.display = "inherit";
         document.getElementById("contact").style.display = "none";
     }
 
     showContact = () => {
         document.getElementById("home").style.display = "none";
         document.getElementById("about-MDHL").style.display = "none";
-        document.getElementById("contact").style.display = "flex";
+        document.getElementById("contact").style.display = "inherit";
     }
 
 </script>
