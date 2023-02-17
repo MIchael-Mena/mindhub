@@ -210,6 +210,7 @@ nav a {
 /* CSS Rule.html */
 
 .title {
+    margin: 10px 0;
     text-align: center;
 
 }
@@ -249,6 +250,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    row-gap: 1rem;
     max-width: 50vmax;
     min-height: 70vh;
     border-radius: 5px;
@@ -292,4 +294,28 @@ table th{
     background-color: #282a35;
 }
 
+td img{
+    cursor: pointer;
+}
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+/* CSS Register */
+
+/* .label-size{
+    width: 150px;
+} */

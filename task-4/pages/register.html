@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDHL</title>
+    <link rel="stylesheet" href=../assets/css/style.css>
+    <link rel="stylesheet" href=../assets/css/style-register.css>
+</head>
+</head>
+
+<body>
+    <header>
+        <img src="../assets/images/Logo Mighty ducks-01.png" alt="MDHL" width="125" height="125" class="logo">
+        <img src="../assets/images/design1_image1.jpg" alt="banner" class="banner">
+        <h1>Mighty Ducks Hockey League </h1>
+        <nav class="">
+            <a href="index.html" class="button-nav">Home</a>
+            <a href="about.html" class="button-nav">About</a>
+            <a href="contact.html" class="button-nav">Contact</a>
+            <a href="rules.html" class="button-nav">Rules</a>
+            <a href="game-information.html" class="button-nav">Game information</a>
+            <a href="#" class="button-nav button-active">Register</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="action-page.html" method="get" class="card-rules" style="padding: 30px 100px;;">
+                <h1 class="title">Registration Form</h1>
+                <div class="flex-between">
+                    <div class="container-input-50">
+                        <label for="fname" class="label-row-double">Player`s First Name: </label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." class="input-row-double" maxlength="2">
+                    </div>
+                    <div class="container-input-50">
+                        <label for="lname" class="label-row-double">Last Name: </label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="input-row-double">
+                    </div>
+                </div>
+                <div>
+                    <label for="address" class="label-row-2">Street Address: </label>
+                    <input type="text" id="address" name="address" placeholder="Your street address.."
+                        class="input-row-2">
+                </div>
+                <div class="flex-between">
+                    <div class="container-input-50">
+                        <label for="city" class="label-row-double">City: </label>
+                        <input type="text" id="city" name="city" placeholder="Your city.." class="input-row-double">
+                    </div>
+                    <div class="container-input-50">
+                        <label for="countriCode" class="label-row-double">Zip Code: </label>
+                        <input type="number" id="countriCode" name="countriCode" placeholder="Your zip code.." 
+                        class="input-row-double" min="1" max="100000">
+                    </div>
+                </div>
+                <div class="flex-between">
+                    <div class="container-input-50">
+                        <label for="date">Birth Date(mm/dd/yyyy): </label>
+                        <input type="date" id="date" name="date" placeholder="Your birth date..">
+                    </div>
+                    <div class="container-input-50">
+                        <label class="label-row-double">Gender: </label>
+                        <input type="radio" id="male" name="gender" value="Male" style="margin-left: 30px;">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <h3>Which elementary scholl do you live near?</h3>
+                    <h4>Closest School:</h4>
+                </div>
+                <div class="flex-around">
+                    <div>
+                        <input type="radio" id="AJ" name="scholl" value="AJ Katzenmaier">
+                        <label for="AJ">AJ Katzenmaier</label>
+                        <br>
+                        <input type="radio" id="Greenbay" name="scholl" value="Greenbay">
+                        <label for="Greenbay">Greenbay</label>
+                        <br>
+                        <input type="radio" id="Howard" name="scholl" value="Howard A Yeager">
+                        <label for="Howard">Howard A Yeager</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Marjorie" name="scholl" value="Marjorie P Hart">
+                        <label for="Marjorie">Marjorie P Hart</label>
+                        <br>
+                        <input type="radio" id="North" name="scholl" value="North Elementary">
+                        <label for="North">North Elementary</label>
+                        <br>
+                        <input type="radio" id="South" name="scholl" value="South Elementary">
+                        <label for="South">South Elementary</label>
+                    </div>
+                </div>
+                <h3 style="margin-top: 20px;">What position(s) do you normally play? (check all that apply)</h3>
+                <div class="flex-around">
+                    <div>
+                        <input type="checkbox" id="Forward" name="position" value="Forward">
+                        <label for="Forward">Forward</label>
+                        <br>
+                        <input type="checkbox" id="Defense" name="position" value="Defense">
+                        <label for="Defense">Defense</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Goalie" name="position" value="Goalkeeper">
+                        <label for="Goalie">Goalkeeper</label>
+                        <br>
+                        <input type="checkbox" id="midfield" name="position" value="Midfield">
+                        <label for="midfield">Midfield</label>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="display: inline-block;" style="margin-top: 20px;">Uniform Size: </h3>
+                    <select id="uniform" name="uniform" style="margin-left: 20px;">
+                        <option value="youthSmall">Youth Small</option>
+                        <option value="youthMedium">Youth Medium</option>
+                        <option value="youthLarge">Youth Large</option>
+                        <option value="youthXLarge">Youth X-Large</option>
+                        <option value="adultSmall">Adult Small</option>
+                        <option value="adultMedium">Adult Medium</option>
+                        <option value="adultLarge">Adult Large</option>
+                        <option value="adultXLarge">Adult X-Large</option>
+                    </select>
+                </div>
+
+                <h3 style="margin-top: 20px;">Permission to Play</h3>
+                <p>
+                    I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by All
+                    the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical
+                    injury
+                    associated with hockey and in consideration for the "League" accepting the registrant for its hockey
+                    programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL,
+                    their employees and associated personnel and volunteers, including the facilities used for
+                    registrant's participation in the programand/orbeing transported to or from MDHL sponsored
+                    activities, which transportation.
+                    By signing below, I herebyagree andauthorizethe aboce. In addition, by signing below, I also
+                    acknowledge thay I have read the cancellation policy and agree to its terms.
+                </p>
+                <div>
+                    <label for="signature" class="label-row">Parent / Guardian Signature: </label>
+                    <input type="text" id="signature" name="signature" placeholder="Your signature.." class="input-row">
+                </div>
+                <div>
+                    <label for="date" class="label-row">Date: </label>
+                    <input type="text" id="date" name="date" placeholder="mm/dd/yyyy" >
+                </div>
+                <diV class="flex-center">
+                    <button type="reset" class="button-submit">Reset</button>
+                    <button type="submit" class="button-submit">Submit</button>
+                </diV>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
