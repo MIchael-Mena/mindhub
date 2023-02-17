@@ -22,8 +22,6 @@ main {
     position: absolute;
     height: 80vh;
     width: 100%;
-/*     display: flex;
-    justify-content: center; */
 }
 
 section {
@@ -56,7 +54,7 @@ header {
     overflow: hidden;
     background-color: #282a35;
     z-index: 100;
-    box-shadow: 0 5 px 10px 0 rgba(0, 0, 0, 0.7 );
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8 );
 }
 
 header h1 {
@@ -66,14 +64,7 @@ header h1 {
     top: 0;
     left: 0;
     position: absolute;
-    /* background-color: purple; */
     padding: 2px 30px;
-}
-
-header nav {
-    top: 30px;
-    right: 5vw;
-    position: absolute;
 }
 
 .logo {
@@ -102,7 +93,7 @@ header nav {
     position: absolute;
     top: 50px;
     object-fit: cover;
-    border-top: 2px solid #F5F5F5;
+    border-top: 4px solid #F5F5F5;
 }
 
 .margin-l {
@@ -111,41 +102,44 @@ header nav {
 
 /* NAV and botton */
 
-.button-active{
-    background-image: linear-gradient(to right, orangered,orangered) !important;
-}
-
 nav a:link,
 nav a:visited {
     text-decoration: none;
 }
 
-nav a {
-    color: white;
-    font-weight: bold;
+header nav {
+    top: 4px;
+    /* top: 5px; */
+    /* right: 5vw; */
+    right: 0;
+    position: absolute;
+    display: flex;
 }
+
+.button-active{
+    background-image: linear-gradient(#0c0d0d 0, #541a0f 100%) !important;
+    /* padding: 10px 0px !important; */
+/*     border: 4px solid #008b8b !important;
+    box-sizing: content-box !important; */
+    outline: 4px solid #008b8b !important;
+    
+}
+
 
 .button-nav:hover {
     transform: scale(1.1);
+    /* background-image: linear-gradient(#0c0d0d 0, #541a0f 100%); */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .button-nav:active {
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
 
-/* .background-green {
-    background-color: green;
-}
-
-.background-purple {
-    background-color: purple;
-} */
-
-.button-nav:before,
+/* .button-nav:before,
 .button-nav:after {
   border-radius: 80px;
-}
+} */
 
 .button-nav:before {
   background-image: linear-gradient(92.83deg, yellow 0, yellow 100%);
@@ -176,15 +170,17 @@ nav a {
 }
 
 .button-nav {
-    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
-    border: 2px solid #F5F5F5;
-    border-radius: 80px;
-    padding: 10px 20px;
+    /* background-image: linear-gradient(#541a0f 0, #0c0d0d 100%); */
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8); */
+    /* border: 2px solid #F5F5F5; */
+    /* border-radius: 80px; */
+    padding: 14px 20px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 0 10px
+    /* margin: 0 4px; */
+    color: white;
+    font-weight: bold;
 }
 
 /* ********************************************* */
@@ -205,47 +201,6 @@ nav a {
     padding: 20px 40px;
 }
 
-
-
-/* CSS Rule.html */
-
-.title {
-    margin: 10px 0;
-    text-align: center;
-
-}
-
-.caption {
-    text-indent: 30px;
-}
-
-.ol-bold-1 {
-    list-style-type: none;
-    counter-reset: my-badass-counter;
-}
-.ol-bold-1>li:before {
-    content: counter(my-badass-counter) ".";
-    counter-increment: my-badass-counter;
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-.ol-a{
-    text-indent: 2rem;
-    list-style-type: none;
-    counter-reset: my-badass-counter;
-}
-
-.ol-a>li:before {
-    content: counter(my-badass-counter, lower-alpha) ".";
-    counter-increment: my-badass-counter;
-    margin-right: 5px;
-}
-
-li{
-    line-height: 1.3;
-}
-
 .card-rules{
     display: flex;
     flex-direction: column;
@@ -261,61 +216,8 @@ li{
     margin: 30px 0;
 }
 
-/* CSS Gamge Information */
-
-table{
-    margin: 0 auto;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid #F5F5F5;
+.title {
+    margin: 10px 0;
     text-align: center;
+
 }
-
-table td{
-    padding: 5px;
-    /* border: 1px solid #F5F5F5; */
-    /* border-bottom: 1px solid #F5F5F5;
-    border-collapse: collapse; */
-}
-
-
-/* o even */
-table tr:nth-child(odd){
-    /* background-color: #282a35; */
-    border-bottom: 1px solid #F5F5F5;
-    border-collapse: collapse;
-}
-
-table th{
-    padding: 5px;
-    border: 1px solid #F5F5F5;
-    border-collapse: collapse;
-    background-color: #282a35;
-}
-
-td img{
-    cursor: pointer;
-}
-
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-
-/* CSS Register */
-
-/* .label-size{
-    width: 150px;
-} */

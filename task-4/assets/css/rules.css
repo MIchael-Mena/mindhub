@@ -1,0 +1,31 @@
+
+.caption {
+    text-indent: 30px;
+}
+
+.ol-bold-1 {
+    list-style-type: none;
+    counter-reset: my-badass-counter;
+}
+.ol-bold-1>li:before {
+    content: counter(my-badass-counter) ".";
+    counter-increment: my-badass-counter;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.ol-a{
+    text-indent: 2rem;
+    list-style-type: none;
+    counter-reset: my-badass-counter;
+}
+
+.ol-a>li:before {
+    content: counter(my-badass-counter, lower-alpha) ".";
+    counter-increment: my-badass-counter;
+    margin-right: 5px;
+}
+
+li{
+    line-height: 1.3;
+}
