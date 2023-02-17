@@ -118,9 +118,6 @@ header nav {
 
 .button-active{
     background-image: linear-gradient(#0c0d0d 0, #541a0f 100%) !important;
-    /* padding: 10px 0px !important; */
-/*     border: 4px solid #008b8b !important;
-    box-sizing: content-box !important; */
     outline: 4px solid #008b8b !important;
     
 }
@@ -128,7 +125,6 @@ header nav {
 
 .button-nav:hover {
     transform: scale(1.1);
-    /* background-image: linear-gradient(#0c0d0d 0, #541a0f 100%); */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -136,10 +132,10 @@ header nav {
     transform: translateY(1px);
 }
 
-/* .button-nav:before,
+.button-nav:before,
 .button-nav:after {
   border-radius: 80px;
-} */
+}
 
 .button-nav:before {
   background-image: linear-gradient(92.83deg, yellow 0, yellow 100%);
@@ -165,7 +161,7 @@ header nav {
   position: absolute;
   right: 4px;
   top: 4px;
-  transition: all 100ms ease-out;
+  /* transition: all 100ms ease-out; */
   z-index: -1;
 }
 
