@@ -118,14 +118,15 @@ header nav {
 
 .button-active{
     background-image: linear-gradient(#0c0d0d 0, #541a0f 100%) !important;
-    outline: 4px solid #008b8b !important;
-    
+    outline: 4px solid #008b8b;
 }
 
 
 .button-nav:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    outline: none;
+    border-radius: 80px;
 }
 
 .button-nav:active {
@@ -161,7 +162,7 @@ header nav {
   position: absolute;
   right: 4px;
   top: 4px;
-  /* transition: all 100ms ease-out; */
+  transition: all 100ms ease-out;
   z-index: -1;
 }
 
